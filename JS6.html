@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Objects</title>
+</head>
+<body>
+    <script>
+        let m = Math;
+        console.log(m);
+        console.log(m.PI);
+        console.log(m.E);
+
+        //let a=3.633;
+        console.log("The rounded value is ",m.round(3.633));
+        console.log('2 to the power 4 is ',m.pow(2,4));
+        console.log('square root of 49 is ',m.sqrt(49));
+        
+        //min and max fun
+        console.log(m.max(4,5,8));
+        console.log(m.min(2,4,5,1,0.99));
+
+        //generating random value
+        let r = m.random();
+        console.log(r);
+
+        //generating random value in between
+        let a = 50;
+        let b = 100;
+        let r50_100 = a + (b-a)*r;
+        console.log(r50_100);
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON</title>
+</head>
+<body>
+    <script>
+    //creating Object
+    let jsonObj = {
+        name : 'Ashim',
+        roll : 7,
+        address : 'Khairenitar',
+    }
+    console.log(jsonObj);
+
+    //converting json obj into a string
+    jsonStr = JSON.stringify(jsonObj);
+    console.log(jsonStr);
+
+    //now we can apply any string methods
+   console.log(jsonStr.replace('Ashim','Chandrey'));
+
+   //converting json string into json obj
+   let newjsonObj = JSON.parse(jsonStr);
+   console.log(newjsonObj);
+    </script>
+
+
+</body>
+</html>
