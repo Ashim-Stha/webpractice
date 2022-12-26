@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>This is my heading</h3>
+    <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, nobis consequuntur? Laborum quam totam corporis deserunt suscipit dignissimos ullam temporibus deleniti maxime, asperiores voluptates fugit, aliquam accusamus, molestiae odio repellat!</p>
+    <button id="btn" onclick="showhide()">Show or Hide</button>
+
+    <div><span id="clock"> </span></div>
+    <script>
+        function showhide(){
+           let btn = document.getElementById('btn');
+           let para = document.getElementById('para');
+           let d = para.style.display;
+           if(d != 'none'){
+             para.style.display = 'none';
+           }
+           else{
+            para.style.display = 'block';
+           }
+
+        }
+        let para = document.getElementById('para');
+         para.addEventListener('mouseover',function f(){
+            console.log('Mouse is inside');
+
+         });
+
+         para.addEventListener('mouseout',function f(){
+            console.log('Mouse is outside');
+         });
+
+         function text (name,greet){
+            console.log('Hello' + '' + name + "," + greet);
+         }
+
+         timeOut = setTimeout(text, 2000, 'Ashim', 'Good morning'); //miliseconds //runs once after certain interval of time
+
+         //to clear settimeout function
+         // clearTimeout(timeout);
+
+       //arg = setInterval(text, 5000, 'Ashim', 'Good morning'); //runs repeatedly after certain interval
+       // to clear we have //clearInterval(arg);
+  
+       function showtime(){
+        time = new Date();
+        document.getElementById('clock').innerHTML = time;
+       }
+
+       setInterval(showtime,1000);
+
+       let dt = new Date();
+       console.log(dt.getFullYear());
+       console.log(dt.getHours());
+       console.log(dt.getDate());
+           </script>
+
+           
+</body>
+</html>

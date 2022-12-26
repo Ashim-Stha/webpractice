@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a = 'Hello';
+        console.log(a);
+        {
+        let a = 2;
+        console.log(a);
+      }
+
+      a = 3;
+      console.log(a);
+
+      const s = 'This is constant';
+
+    /*  if()
+      {
+
+      }
+      else if()
+      {
+        
+      }
+      else{
+
+      } */
+
+      let value = 1;
+      switch(value)
+      {
+        case 1:
+            {
+                console.log("the value is 1");
+                break; //if break is not given then all cases will run after the block where condition is satisfied
+            }
+        case 30:
+            {
+                console.log("the value is 30");
+                break;
+            }
+      }
+
+
+      //creating object
+      let student = {
+       name :'Ashim',
+       roll : 7,
+       address : 'khairenitar',
+       'address 2' : 'pokhara',
+      }
+       console.log(student);
+       console.log(student.name);
+       console.log(student['address 2']);
+
+
+       //creating array
+       let num = [ 2,4,1,8,5];
+       console.log(num);
+       console.log(num[1]);
+
+       // we can create array like this also
+       let num2 = new Array(1,32,4,5);
+      
+       console.log(num.sort());
+       console.log(num.length);
+       console.log(num.push('string',undefined));
+       console.log(num);
+
+       //creating array of n spaces
+       let arr = new Array(20);
+       console.log(arr);
+
+       function st(nam,rollno)
+       {
+        console.log(nam + " is a student of wrc of roll no " + rollno);
+        return nam;
+       }
+
+       //SSst('Ashim',7);
+     let nam = st('Ashim',7);
+       console.log(nam);
+</script>
+
+</body>
+</html>

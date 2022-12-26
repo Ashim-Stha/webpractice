@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body> 
+    <ul class="con" id="ul">
+        <li id="lii ">Home</li>
+        <li>About</li>
+        <li>Services</li>
+        <li>Contact</li>
+    </ul>
+    <style>
+        .con{
+            color: aqua;
+        }
+    </style>
+    <script>
+        
+       let names = ['Ashim','Chandrey','Bashyal'];
+       for(i=0;i<3;i++){
+             console.log(names[i]);
+       }
+
+       //modern java array loop
+       names.forEach(function f(names){
+        console.log(names);
+       });
+
+       //another method for of loop
+       for(element of names){
+           console.log(element);
+       }
+
+
+       //object iteration
+       let student = {
+        name:'Ashim',
+        roll:7,
+        age:20,
+        address:"Khairenitar"
+       }
+
+       for(element in student){
+        console.log(`The ${element} of student is ${student[element]}`);
+       }
+
+       let ul = document.getElementById('ul');
+       console.log(ul); 
+       let lii = document.getElementById('lii');
+       console.log(lii);
+
+       //for class
+       let con = document.getElementsByClassName('con');
+       console.log(con);
+
+       //for css selector
+       let css = document.querySelector('.con');
+       console.log(css);
+</script>
+</body>
+</html>
