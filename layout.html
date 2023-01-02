@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+        }
+        .grid{
+            display: grid;
+            grid-template-areas: 
+            'navbar navbar navbar'
+            'section section aside'
+            'footer footer footer';
+            grid-gap: 5px;
+        }
+        .item{
+            background-color: aquamarine;
+            padding: 30px;
+        }
+        #navbar{
+            grid-area: navbar;
+        }
+        #section{
+            grid-area: section;
+        }
+        #aside{
+            grid-area: aside;
+        }
+        #footer{
+            grid-area: footer;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid">
+        <div class="item" id="navbar"><a href="">Home</a> About Services</div>
+        <div class="item" id="section">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta tenetur deleniti expedita debitis molestiae maiores blanditiis sapiente minima fuga velit obcaecati cum consectetur voluptatem magni, possimus culpa nemo! Veritatis dolorum animi non suscipit placeat vero, optio alias modi commodi nulla architecto est ducimus? Corporis minus, aut nam illum, esse dolor libero nobis commodi voluptatum aliquam voluptas accusamus quia. Aspernatur dignissimos commodi repellendus iusto! Sunt dolores aliquam non ratione sequi, doloremque, nihil iure corrupti doloribus possimus voluptates accusamus quis. Accusamus voluptatum ullam vel quidem, sapiente esse illum nostrum soluta fuga officia, cum assumenda corporis numquam dolorum culpa ipsa. Qui, nulla doloremque? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae consectetur, magni cumque minima repudiandae maxime, reiciendis accusamus repellendus quam nemo, esse eius quo accusantium ullam dolore modi! Repellendus eveniet earum cum id similique sunt dignissimos debitis numquam pariatur quis. Non veniam aut doloremque. Dolorum.</div>
+        <div class="item" id="aside">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel inventore quae distinctio, iusto, nulla laboriosam, tempora in cupiditate incidunt ab totam aut voluptate consequuntur beatae?</div>
+
+    </div>
+</body>
+<footer class="item" id="footer">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium, cum explicabo eius at eaque laudantium!</footer>
+</html>
